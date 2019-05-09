@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Spiro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="exhale_string">Please take a deep breath and exhale strongly during the data retrieval process</string>
+    <string name="finish_string">Check the condition of the lungs is complete. Do you want to check again?</string>
+    <string name="lungs_is_bad">Your lungs are in poor condition. Immediately consult your doctor.</string>
+    <string name="lungs_is_good">Your lungs are in good condition. Take care of your health and keep your spirits up.</string>
+    <string name="lungs_is_error">Error! Please re-check your lungs health or restart this application.</string>
+    <string name="good_title">Congrats</string>
+    <string name="bad_title">Sorry</string>
+</resources>

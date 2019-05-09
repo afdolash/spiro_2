@@ -1,0 +1,166 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context="com.pens.afdolash.spiro.main.ExhaleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ai_breath_pull"/>
+
+        <LinearLayout
+            android:id="@+id/ln_exhale_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exhale_string"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorDarkGrey"
+                android:fontFamily="@font/montserratmedium"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_start"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="28dp"
+                app:cardBackgroundColor="@color/colorBlue">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:fontFamily="@font/montserratbold"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_exhale_chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <com.db.chart.view.LineChartView
+                android:id="@+id/chart_exhale"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:clipToPadding="false"
+                app:chart_axis="false"
+                app:chart_axisBorderSpacing="0dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Measurement"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorDarkGrey"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_marginRight="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_measurement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorBlue"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGrey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="Prediction"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorDarkGrey"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_marginRight="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_prediction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorBlue"
+                        android:fontFamily="@font/montserratsemibold"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
